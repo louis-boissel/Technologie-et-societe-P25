@@ -91,6 +91,7 @@ h3 {
 }
 
 p {
+    font-family: public;
     margin-block-start: 0em;
     margin-block-end: 1,5em;
     orphans: 5;
