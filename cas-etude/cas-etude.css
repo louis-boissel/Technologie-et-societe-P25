@@ -64,7 +64,7 @@ h1{
     margin-block-start: -30px;
     display: inline-block;
     margin-bottom: 30px;
-    max-width: 600px;
+    max-width: 800px;
     line-height: 1em;
 }
 
@@ -80,7 +80,8 @@ h2 {
 h3 {
     font-family: public;
     font-size: 16px;
-    text-decoration: underline;
+    color: grey;
+    margin-top: 50px;
 }
 
 .blocdetexte{
@@ -112,13 +113,20 @@ blockquote {
 }
 
 img {
-    width : 100%;
+    width : auto;
+    max-width: 800px;
     margin-top: 20px;
     margin-bottom: 20px;
-    max-height: 750px;
+    min-height: 300px;
+    max-height: 500px;
+    aspect-ratio: inherit;
 }
 
-
+ul {
+    font-family: public;
+    padding-inline-start: 30;
+    margin-top: -20px;
+}
 
 
 
@@ -162,12 +170,13 @@ img {
 
 
 @page {
-    size: 105mm 297mm;
+    size: 148.5mm 210mm;
     padding: 12mm;
+    margin-bottom: 25mm;
     /*@bottom-center {
         content: counter(page);
         font-family: public;
-      }*/
+    }*/
   }
 
 
@@ -184,6 +193,8 @@ img {
     }
     body {
         margin: 0;
+        orphans: 5;
+        widows: 5;
     }
     .colonne2 {
         flex: none;
@@ -195,17 +206,32 @@ img {
     }
     h1 {
         margin-block-start: 0px;
+        font-size: 35pt;
+    }
+    img {
+        width: 100%;
     }
     h2 {
         break-before: page;
+        margin-top: 10pt;
+        font-size: 28pt;
     }
     .blocdetexte {
         break-before: page;
-        column-count: 1;
         text-align: left;
     }
+    p {
+        font-size: 11pt;
+        column-count: 1;
+    }
+    ul {
+        font-size: 11pt;
+    }
+    ol{
+        font-size: 11pt;
+    }
     .cartographie {
-        display: none;
+        /*display: none;*/
     }
 }
 
