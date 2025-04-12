@@ -10,7 +10,8 @@
 
 body {
     background-color: white;
-    color: black;
+    color: #5E1600;
+    overflow-wrap: break-word;
 }
 
 #grid{
@@ -28,7 +29,7 @@ body {
     justify-content: space-between;
     flex-direction: column;
     height: 1fr;
-    padding: 25px;
+    padding: 32px;
     top: 0;
     bottom: 0;
     left: 0;
@@ -43,7 +44,7 @@ nav{
 
 a {
     text-decoration: none;
-    color: black;
+    color: #5E1600;
 }
 
 a:hover {
@@ -52,7 +53,7 @@ a:hover {
 
 img:hover {
     background: #e1e1e1;
-    box-shadow: 0 0 0 2px black;
+    box-shadow: 0 0 0 3px #5E1600;
 }
 
 
@@ -145,15 +146,17 @@ p {
 
 
     #colonne2 {
-        grid-gap: 50px;
-        margin-left: 25px;
-        margin-right: 25px;
+        display: flex;
+        flex-direction: column;
+        margin-left: 20px;
+        margin-right: 20px;
     }
     
     article {
         flex-direction: column;
         width: 100%;
         gap: 25px;
+        margin-bottom: 50px;
     }
       article figure {
         margin-inline: 0px;
@@ -162,8 +165,8 @@ p {
       article figure img {
         height: 300px;
         width: 100%;
+        max-width: 100%;
         object-fit: cover;
-        align-items: left;
       }
       article header {
         display: flex;
@@ -172,16 +175,15 @@ p {
     
     
       h2 {
+        max-width: 100%;
         font-family: synetactile;
         font-size: 48px;
-        margin-block-start: 0px;
-        margin-bottom: -10px;
-        display: inline-block;
-        max-width: 600px;
+        margin-bottom: 0px;
     }
     
     p {
         font-family: public;
         font-size: 16px;
+        margin-right: 25px;
     }
 }
